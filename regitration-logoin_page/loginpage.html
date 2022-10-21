@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Login</title>
+  
+  <style>
+  *{
+    margin:0;
+    padding:0;
+  }
+  body{
+    width:22%;
+    margin:auto;
+    padding:50px;
+    background-color:beige;
+}
+  .main{
+    width: 220px;
+    height:150px;
+    margin:auto;
+    margin-top:20px;
+    background-color: #115A96;
+    padding-left:16%;
+    padding-top: 50px;
+    border-radius: 15px;
+    color: white;
+    text-transform: uppercase;
+    font-size: 11px;
+    font-weight: bold;
+    text-align: auto;
+    font-family: "Century Gothic";
+    }
+    
+    .sub, span,a{
+    width:50%;
+    height: 22px;
+    background-color: orange;
+    border-radius: 10px;
+    margin:9px auto 2px auto;
+    text-align: center;
+    cursor: pointer;
+    clear: both;
+    position :relative ;
+    text-align: center;
+    padding-left:5px;
+    font-size: 18px;
+    font-weight: bold;
+    align-items:center;
+    }
+    .sign{
+    margin:5px;
+    padding-top:5px;
+    space-between:30px;
+    text-transform:uppercase;
+    font-weight: bold;
+    font-size:20px;
+    padding-left: 20px;
+    text-align:center;
+    }
+    
+    .main input {
+        width: 165px;
+        height: 25px;
+        margin: 3px 0px 0px 10px;
+        border: 0px;
+        font-weight: bold;
+        }
+        .main form label{
+         margin: 5px 0px 0px 15px;
+        }
+        
+   @media(max-width:768px){
+    body{
+   width:70%;
+   margin:auto;
+   padding-top:50px;
+    }
+    
+  }
+  </style>
+</head>
+<body>
+  
+    <p class="sign" align="center">Log in</p>
+  <div class="main">
+  
+    <form class="form1">
+      <label >e-mail</label>
+      <input class="un " type="email" align name="email" placeholder="email" required/><br /><br><br>
+      <label for="password" >Password</label>
+      <input class="pass" type="password" align="center" name="password" placeholder="Password" required/>
+      
+        <div class="sub">
+          <span><a href="Success.html">Submit</a></span>
+        </div>
+    </div>
+     
+</body>
+
+</html>
