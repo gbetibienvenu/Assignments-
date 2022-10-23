@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Flex Task</title>
+  <style type="text/css">
+   
+  .container{
+    display:flex;
+    flex-wrap:wrap;
+    background:white;
+    justify-content:center;
+  }
+  
+  .container > div{
+  height:400px;
+  width:250px;
+  padding-top: 30px;
+  margin-top :300px;
+  }
+  
+  .container p,.container h1{
+  margin:20px 20px 20px 20px;
+  color: hsla(0, 0%, 100%, 0.75);
+  }
+  .container img{
+  margin:0px 0px 0px 35px;
+  }
+  .container .suv button{
+  color: #0A6471;  
+  }
+  .container .sed button{ 
+    color: orange;
+    background:hsl(0, 0%, 95%);
+  }
+  
+  .container .lux button{
+    color: #112E30;
+  }
+  
+  .container button{
+    margin:20px;
+    margin-right: 100px ;
+    margin-top: 70px;
+    padding:5px 10px 5px 10px;
+    border-radius:15px;
+    border:none;
+  }
+  .container .sed{
+    background:hsl(31, 77%, 52%);
+    border-radius:5px;
+  }
+  
+  .container .suv{
+    background: hsl(184, 100%, 22%);
+  }
+  
+  .container .lux{
+  background:hsl(179, 100%, 13%);
+  border-radius:5px;
+    
+  }
+  #bu a{
+    justify-content:center;
+    font-size :13px;
+    font-weight:bold;
+  }
+  #bu button{
+    margin-top: 20px;
+    margin-left: 680px;
+    margin-right:365px;
+    padding: 10px 8px 10px 8px;
+    border:none;
+    background: orchid;
+    border-radius:15px;
+    color: greenyellow;
+
+  }
+@media(max-width:768px){
+  
+/*Styling for all the Div in div container*/
+  .container > div{
+    margin-top:1px;
+    margin-bottom:1px;
+  }
+  .container.lux {
+    margin-bottom :100px;
+  }
+  
+  /*Down button styling for media Querie*/
+  #bu a{
+    justify-content:center;
+    font-size :8px;
+    font-weight:bold;
+  }
+  #bu button{
+    margin-top: 3px;
+    margin-bottom :0px;
+    margin-left: 178px;
+    margin-right:110px;
+    padding: 4px 25px 4px 25px;
+
+  }
+}
+  </style>
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container" id="wrap reverse" >
+    
+    <div class="sed">
+       <img src="or.jpg" alt="image" width="45px" height="45px" /><br />
+      
+       <h1>
+         SEDANS
+       </h1>
+      
+       <p>
+         choose a sedans for its affordability and excellent fuel economy.
+         Ideal of cruising in the city or on your next road trip.
+       </p><br>
+       <center><button>Learn more </button></center>
+    </div>
+    
+    <div  class="suv">
+      <img src="lb.jpg" alt="image" width="45px" height="45px" />
+      
+      <h1>
+        SUVS
+      </h1>
+      <p>
+        Take on suv for its spacious interior,power and versatility.
+        Perfect for your next family vacation off-road and adventures.
+      </p> <br>
+    <center><button>Learn more</button></center>
+    </div>
+    
+    <div  class="lux">
+      <img src="g.jpg" alt="image" width="45px" height="45px"/>
+      
+      <h1>
+        LUXURY
+      </h1>
+      <p>
+      Creat in the best cor brands without
+      the bloated pieces.
+      Enjoy the enhanced confort of lexury rental and arrive in style.
+      </p><br>
+      <center><button>Learn more </button></center>
+    </div>
+  </div>
+  
+  <div id="bu">
+  <button type="submit">
+    <a href="grid.html">Click here to view grid</a>
+  </button>
+  </div>
+  
+</body>
+</html>

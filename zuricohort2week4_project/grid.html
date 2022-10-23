@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Grid Task</title>
+  
+  <style type="text/css">
+  
+  
+  body{
+  background-color:#142119;
+   }
+     .item1{
+     grid-area:a;
+     background-color:#E35C1C;
+     }
+     .item2{
+     grid-area:b;
+     background-color:orange;
+     }
+     .item3{
+       grid-area:c;
+      background-color:#1CE363;
+     }
+     .item4{
+        grid-area:d;
+        background-color:#229BDD;
+     }
+     .item5{
+      grid-area:e;
+      background-color:#229BDD;
+     }
+        
+     .container{
+     display:grid;
+     grid-template-areas: 
+     'a a b'
+      'c d d'
+      'c e e';
+  grid-template-columns:200px 120px 200px;
+   grid-template-rows:210px 90px 120px;
+      gap:15px;
+      padding:20px;
+      justify-content:center;
+      margin-top:80px;
+      }
+    @media(max-width:768px){
+     .container{
+   grid-template-columns:80px 50px 80px;
+   grid-template-rows:82px 35px 60px;
+   gap:7px;
+   padding:10px;
+     }
+   }
+    
+  </style>
+</head>
+
+<body>
+ <div class="container">
+   <div class="item1">
+    <center><p>
+     ITEM A
+    </center></p>
+     </div>
+
+   <div class="item2">
+  <center> 
+  <p>
+    ITEM B
+  </p>
+  </center>
+     </div>
+     
+   <div class="item3">
+   <center><p>
+     ITEM C
+   </center></p>
+  </div>
+  
+   <div class="item4">
+   <center><p>
+    ITEM D
+   </center></p>
+  </div>
+  
+   <div class="item5">
+   <center><p>
+     ITEM E
+     </center></p>
+  </div>
+
+ </div>
+</body>
+
+</html>
