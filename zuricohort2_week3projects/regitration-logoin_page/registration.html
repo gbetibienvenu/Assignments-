@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>HTML</title>
+<style>
+  *{
+  margin:0;
+  padding:0;
+}
+html{
+  scroll-behavior:smooth;
+}
+body{
+  width:22%;
+  margin:auto;
+  padding-top:50px;
+  background-color:beige;
+}
+
+   @media(max-width:768px){
+    body{
+   width:57%;
+   margin:auto;
+   padding-top:50px;
+    }
+    
+  }
+.page{
+text-transform: uppercase;
+font-weight: bold;
+font-size:20px;
+background-color:#8A796E17;
+color: cadetblue;
+  
+}
+.registration form {
+  width: 220px;
+  height:400px;
+  background-color:black;
+  padding: 10px 0px 0px 10px;
+  border-radius: 15px;
+  color: white;
+  text-transform: uppercase;
+  font-size: 11px;
+  font-weight: bold;
+  font-family: "Century Gothic";
+}
+
+.registration input, .registration select {
+  width: 200px;
+  height: 20px;
+  margin: 3px 0px 0px 3px;
+  border: 0px;
+  font-weight: bold;
+}
+
+.registration input:focus {
+  background-color: orange;
+}
+
+.registration form label {
+  margin: 15px 0px 0px 15px;
+}
+
+a {
+  outline: none;
+}
+
+.register_button {
+  width: 149px;
+  height: 42px;
+  background-color: orange;
+  border-radius: 10px;
+  margin: 15px auto 0px auto;
+  text-align: center;
+  cursor: pointer;
+  clear: both;
+}
+
+.register_button span {
+  font-weight: normal;
+  font-size: 28px;
+  font-family: "Impact";
+  line-height: 40px;
+}
+
+.register_button span a {
+  text-decoration: none;
+  color: white;
+}
+
+.register_button span a:hover {
+  color: black;
+}
+
+span.error {
+  margin-right: 20px;
+  font-size: 9px;
+  color: orange;
+  height: 10px;
+}
+
+p.error {
+  margin: 0px 14px 0px 10px;
+  font-size: 9px;
+  color: skyblue;
+  height: 6px;
+  padding: 0px 0px 8px 0px;
+  text-align: right;
+  text-transform: none;
+}
+</style>
+</head>
+
+<body>
+  
+<div class="page"> <center> <p>registration page</p></center>
+</div>
+<div class="registration">
+  <form>
+    <label>First name</label>
+    <input type="text" name="first name" minlength="8" maxlength="15" required/>
+    <p class="error">
+      <span>Please enter your first name</span>
+    </p>
+
+    <label>Your last name</label>
+    <input type="text" name="last name" minlength="8" maxlength="15" required/>
+    <p class="error">
+      <span>Please enter your last name here</span>
+    </p>
+    
+    <label>Phone Number</label>
+       <input type="tel" name="phone" id="phone" required />
+       <p class="error">
+         <span>Please your number </span>
+       </p>
+
+    <label>e-mail</label>
+    <input type="e-mail" name="e-mail" id="e-mail" maxlength="30" minlength="10" required/>
+    <p class="error">
+      <span>Some text here</span>
+    </p>
+    <label>gender</label>
+    <select name="gender">
+      <option>male</option>
+      <option>female</option>
+    </select><br><br>
+    
+    <label>Birthday</label>
+    <input type="date" id="birthday" name="birthday"><br><br/>
+    
+    <label >favorite color</label>
+    <input type="color" id="favcolor" name="favcolor"/>
+
+    <div class="register_button">
+      <span><a href="loginpage.html">REGISTER</a></span>
+    </div>
+  </form>
+</div>
+</body>
+</html>
